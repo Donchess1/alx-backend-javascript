@@ -1,6 +1,3 @@
-export default function getStudentsByLocation(st, loc){
-	let st_loc = [];
-	st_loc = st.filter(st=>st.location===loc)
-
-	return st_loc
+export default function getStudentsByLocation(students, city) {
+  return students.filter((student) => student.location === city);
 }
