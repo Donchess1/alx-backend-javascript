@@ -1,5 +1,5 @@
-// import the displayMessage function from the 0-console.js file
-const { displayMessage } = require('./0-console');
+function displayMessage(message) {
+  process.stdout.write(message + '\n'); // Add a newline for better formatting
+}
 
-// call the function to display a message
-displayMessage('Hello, world!');
+module.exports = displayMessage;
